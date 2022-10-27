@@ -18,11 +18,19 @@ class _LoginPageState extends State<LoginPage> {
        height:altura(context) - MediaQuery.of(context).padding.top,
       child: Column(
         children: [
- Padding(padding: EdgeInsets.symmetric(horizontal: 45),
- child: Column(mainAxisAlignment: MainAxisAlignment.start,crossAxisAlignment: CrossAxisAlignment.center,),),
+ Padding(
+  padding: EdgeInsets.symmetric(horizontal: 45),
+ child: Column(
+  mainAxisAlignment: MainAxisAlignment.start, 
+  crossAxisAlignment: CrossAxisAlignment.center,
+  ),),
  Padding(
    padding: EdgeInsets.symmetric(horizontal: 145,vertical: 45),
-   child: SizedBox(height: 110,width:135,child: Image.asset('lib/images/granjasss.png')),
+   child: SizedBox(
+    height: 110, 
+    width:135, 
+    child: Image.asset('lib/images/granjasss.png')
+    ),
  ),
  Padding(padding: EdgeInsets.symmetric(vertical: 12)),
  Padding(
@@ -31,6 +39,8 @@ class _LoginPageState extends State<LoginPage> {
  ),
  Padding(padding: EdgeInsets.symmetric(vertical: 25)),
  RaisedButton(
+  color: Colors.green,
+  child: Text('Entrar', style: GoogleFonts.bebasNeue(fontSize: 30, color: Colors.white), textAlign: TextAlign.center,),
   onPressed: (() {}),
   
  ),
