@@ -1,4 +1,5 @@
 import 'package:app_biblioteca_planilha/app_config.dart';
+import 'package:app_biblioteca_planilha/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 class LoginPage extends StatefulWidget {
@@ -35,15 +36,17 @@ class _LoginPageState extends State<LoginPage> {
  Padding(padding: EdgeInsets.symmetric(vertical: 12)),
  Padding(
    padding: const EdgeInsets.symmetric(vertical: 25,horizontal: 8),
-   child: Text('Seja bem vindo ao App da Biblioteca das Granjas 4 Irmãos.',style: GoogleFonts.bebasNeue(fontSize: 39,color: Colors.green),textAlign: TextAlign.center,),
+   child: Text('Seja bem vindo ao App da Biblioteca das Granjas 4 Irmãos.',style: GoogleFonts.bebasNeue(fontSize: 45,color: Colors.green),textAlign: TextAlign.center,),
  ),
- Padding(padding: EdgeInsets.symmetric(vertical: 25)),
- RaisedButton(
-  color: Colors.green,
-  child: Text('Entrar', style: GoogleFonts.bebasNeue(fontSize: 30, color: Colors.white), textAlign: TextAlign.center,),
-  onPressed: (() {}),
-  
- ),
+ Padding(padding: EdgeInsets.symmetric(vertical: 35)),
+   RaisedButton(
+    
+    color: Colors.green,
+    child: Text('Seja bem vindo', style: GoogleFonts.bebasNeue(fontSize: 45, color: Colors.white), textAlign: TextAlign.center,),
+    onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(),)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side: BorderSide(color: Colors.black,width: 1.5)),
+    padding: EdgeInsets.symmetric(horizontal: 15),
+   ),
       ],
       ),
       ),
