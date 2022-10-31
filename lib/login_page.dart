@@ -2,6 +2,8 @@ import 'package:app_biblioteca_planilha/app_config.dart';
 import 'package:app_biblioteca_planilha/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:iconly/iconly.dart';
+import 'package:bootstrap_icons/bootstrap_icons.dart';
 class LoginPage extends StatefulWidget {
   const LoginPage({ Key? key }) : super(key: key);
 
@@ -10,10 +12,12 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  TextEditingController contorleEmail = TextEditingController();
+  TextEditingController contorleName = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 25, 25, 25),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
    body: SafeArea(
     child: SingleChildScrollView(
       child: Container(
@@ -27,40 +31,84 @@ class _LoginPageState extends State<LoginPage> {
   crossAxisAlignment: CrossAxisAlignment.center,
   ),),
  Padding(
-   padding: EdgeInsets.symmetric(horizontal: 145,vertical: 45),
+   padding: EdgeInsets.symmetric(horizontal: 145,vertical: 55),
    child: SizedBox(
     height: 110, 
     width:135, 
     child: Image.asset('lib/images/granjasss.png')
     ),
  ),
- Padding(padding: EdgeInsets.symmetric(vertical: 12)),
+ Text('Biblioteca G4I',style: GoogleFonts.bebasNeue(fontSize: 45,color: Color(0xFF047808)),),
  Padding(
-   padding: const EdgeInsets.symmetric(vertical: 25,horizontal: 8),
-   child: Text('Faça o download agora mesmo do  App da Biblioteca das Granjas 4 Irmãos.',style: GoogleFonts.bebasNeue(fontSize: 45,color: Colors.green),textAlign: TextAlign.center,),
+   padding: const EdgeInsets.symmetric(vertical: 35,horizontal: 18),
+ child:
+ Card(
+shape: RoundedRectangleBorder(
+  borderRadius: BorderRadius.circular(30),
+  side: BorderSide(color: Color(0xFF047808),width: 2.5),
+),
+child: TextFormField(
+                            controller: contorleName,      
+                            decoration: InputDecoration(
+                              contentPadding: EdgeInsets.symmetric(vertical: 5),
+                              border: InputBorder.none,
+                              focusedBorder: InputBorder.none,
+                              enabledBorder: InputBorder.none,
+                              errorBorder: InputBorder.none,
+                              disabledBorder: InputBorder.none,
+                              prefixIcon: Icon(
+                              BootstrapIcons.person_circle,
+                                color: Color(0xFF047808),
+                              ),
+                              labelText: 'Seu nome de usuario',
+                              labelStyle: GoogleFonts.oswald(
+                                color: Color(0xff047808),
+                                fontSize: 25,
+                              ),
+                            ),
+                          ),
+                          shadowColor: Color(0xFF047808),
+ ),
+ ),
+ Padding(padding: EdgeInsets.symmetric(vertical: 1.5)),
+ Padding(
+   padding: EdgeInsets.symmetric(horizontal: 18),
+   child: Card(
+shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(30),
+    side: BorderSide(color: Color(0xFF047808),width: 2.5),
+),
+child: TextFormField(
+                              controller: contorleName,      
+                              decoration: InputDecoration(
+                                contentPadding: EdgeInsets.symmetric(vertical: 5),
+                                border: InputBorder.none,
+                                focusedBorder: InputBorder.none,
+                                enabledBorder: InputBorder.none,
+                                errorBorder: InputBorder.none,
+                                disabledBorder: InputBorder.none,
+                                prefixIcon: Icon(
+                                BootstrapIcons.at,
+                                  color: Color(0xFF047808),
+                                ),
+                                labelText: 'Seu email',
+                                labelStyle: GoogleFonts.oswald(
+                                  color: Color(0xff047808),
+                                  fontSize: 25,
+                                ),
+                              ),
+                            ),
+                            shadowColor: Color(0xFF047808),
+   ),
  ),
  Padding(padding: EdgeInsets.symmetric(vertical: 35)),
-   RaisedButton(
-    color: Colors.black,
-    child: Text(
-      'Seja bem vindo!', 
-      style: GoogleFonts.bebasNeue(
-        fontSize: 45, 
-        color: Colors.green,
-        ), 
-        textAlign: TextAlign.center,
-        ),
-    onPressed: () => Navigator.push(
-      context, MaterialPageRoute(builder: (context) => HomePage(),)),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(20),
-      side: BorderSide(
-        color: Colors.green,
-        width: 2.5,
-        ),
-      ),
-    padding: EdgeInsets.symmetric(horizontal: 15),
-   ),
+ RaisedButton(
+  color: Colors.white,
+  onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (_) => HomePage()));},
+  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30),side: BorderSide(color: Color(0xFF047808),width: 2.5)),
+  child: Text('Acessar',style: GoogleFonts.bebasNeue(fontSize: 45,color: Color(0xFF047808)),),
+  )
+ 
       ],
       ),
       ),
