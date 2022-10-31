@@ -41,11 +41,24 @@ class _LoginPageState extends State<LoginPage> {
  ),
  Padding(padding: EdgeInsets.symmetric(vertical: 35)),
    RaisedButton(
-    
     color: Colors.black,
-    child: Text('Seja bem vindo!', style: GoogleFonts.bebasNeue(fontSize: 45, color: Colors.green), textAlign: TextAlign.center,),
-    onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage(),)),
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),side: BorderSide(color: Colors.green,width: 2.5)),
+    child: Text(
+      'Seja bem vindo!', 
+      style: GoogleFonts.bebasNeue(
+        fontSize: 45, 
+        color: Colors.green,
+        ), 
+        textAlign: TextAlign.center,
+        ),
+    onPressed: () => Navigator.push(
+      context, MaterialPageRoute(builder: (context) => HomePage(),)),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(20),
+      side: BorderSide(
+        color: Colors.green,
+        width: 2.5,
+        ),
+      ),
     padding: EdgeInsets.symmetric(horizontal: 15),
    ),
       ],
