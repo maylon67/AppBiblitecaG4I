@@ -13,8 +13,18 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  TextEditingController contorleEmail = TextEditingController();
-  TextEditingController contorleName = TextEditingController();
+  @override
+  void initState() {
+    super.initState();
+  FocusNode  myFocusNode = FocusNode();
+  }
+  @override
+  void dispose() {
+    // limpa o no focus quando o form for liberado.
+   // myFocusNode.dispose();    super.dispose();
+  }
+  TextEditingController controleEmail = TextEditingController();
+  TextEditingController controleName = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
-            height: altura(context) - MediaQuery.of(context).padding.top,
+            height: height(context) - MediaQuery.of(context).padding.top,
             child: Column(
               children: [
                 Padding(
@@ -50,10 +60,11 @@ class _LoginPageState extends State<LoginPage> {
                   child: Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
-                      side: BorderSide(color: Color(0xFF047808), width: 2.5),
+                      side: BorderSide(color: corPadrao, width: 2.5),
                     ),
                     child: TextFormField(
-                      controller: contorleName,
+                      keyboardType: TextInputType.name,
+                      controller: controleName,
                       decoration: InputDecoration(
                         contentPadding: EdgeInsets.symmetric(vertical: 5),
                         border: InputBorder.none,
@@ -63,11 +74,11 @@ class _LoginPageState extends State<LoginPage> {
                         disabledBorder: InputBorder.none,
                         prefixIcon: Icon(
                           BootstrapIcons.person_circle,
-                          color: Color(0xFF047808),
+                          color: corPadrao,
                         ),
                         labelText: 'Seu nome de usuario',
                         labelStyle: GoogleFonts.oswald(
-                          color: Color(0xff047808),
+                          color: corPadrao,
                           fontSize: 25,
                         ),
                       ),
@@ -81,10 +92,13 @@ class _LoginPageState extends State<LoginPage> {
                   child: Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
-                      side: BorderSide(color: Color(0xFF047808), width: 2.5),
+                      side: BorderSide(color: corPadrao, width: 2.5),
                     ),
                     child: TextFormField(
-                      controller: contorleName,
+                      autofocus: false,
+                      controller: controleEmail,
+                      autocorrect: true,
+                      keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
                         contentPadding: EdgeInsets.symmetric(vertical: 5),
                         border: InputBorder.none,
@@ -94,11 +108,11 @@ class _LoginPageState extends State<LoginPage> {
                         disabledBorder: InputBorder.none,
                         prefixIcon: Icon(
                           BootstrapIcons.at,
-                          color: Color(0xFF047808),
+                          color: corPadrao,
                         ),
                         labelText: 'Seu email',
                         labelStyle: GoogleFonts.oswald(
-                          color: Color(0xff047808),
+                          color: corPadrao,
                           fontSize: 25,
                         ),
                       ),
@@ -121,7 +135,7 @@ class _LoginPageState extends State<LoginPage> {
                     style: GoogleFonts.bebasNeue(
                         fontSize: 45, color: Color(0xFF047808)),
                   ),
-                )
+                ),
               ],
             ),
           ),
