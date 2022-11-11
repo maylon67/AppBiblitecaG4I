@@ -1,4 +1,30 @@
+import 'package:app_biblioteca_planilha/administracao_page.dart';
 import 'package:app_biblioteca_planilha/app_config.dart';
+import 'package:app_biblioteca_planilha/auto_bio_page.dart';
+import 'package:app_biblioteca_planilha/autoconhecimento_page.dart';
+import 'package:app_biblioteca_planilha/contabilidade_page.dart';
+import 'package:app_biblioteca_planilha/design_page.dart';
+import 'package:app_biblioteca_planilha/diversos_page.dart';
+import 'package:app_biblioteca_planilha/economia_page.dart';
+import 'package:app_biblioteca_planilha/empreendedorismo+page.dart';
+import 'package:app_biblioteca_planilha/energia_page.dart';
+import 'package:app_biblioteca_planilha/estrangeiro_page.dart';
+import 'package:app_biblioteca_planilha/ficcao_page.dart';
+import 'package:app_biblioteca_planilha/filosofia_page.dart';
+import 'package:app_biblioteca_planilha/gastronomia_page.dart';
+import 'package:app_biblioteca_planilha/gestao_page.dart';
+import 'package:app_biblioteca_planilha/historia_page.dart';
+import 'package:app_biblioteca_planilha/logistica_page.dart';
+import 'package:app_biblioteca_planilha/marketing_page.dart';
+import 'package:app_biblioteca_planilha/matematica_page.dart';
+import 'package:app_biblioteca_planilha/poesia_page.dart';
+import 'package:app_biblioteca_planilha/politica_page.dart';
+import 'package:app_biblioteca_planilha/psicologia_page.dart';
+import 'package:app_biblioteca_planilha/religiao_page.dart';
+import 'package:app_biblioteca_planilha/sociologia_page.dart';
+import 'package:app_biblioteca_planilha/startups_page.dart';
+import 'package:app_biblioteca_planilha/sustentabilidade_page.dart';
+import 'package:app_biblioteca_planilha/tecnologia_page.dart';
 import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttericon/elusive_icons.dart';
@@ -46,7 +72,7 @@ class _HomePageState extends State<HomePage> {
             shrinkWrap: true,
             children: [
               GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HistoriaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -71,7 +97,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EnergiaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -96,7 +122,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ReligiaoPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -121,7 +147,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SustentabilidadePage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -146,7 +172,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EmpreendedorismoPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -171,7 +197,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LogisticaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -196,7 +222,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => DesignPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -221,7 +247,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => GastronomiaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -246,7 +272,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => MatematicaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -262,7 +288,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Padding(padding: EdgeInsets.symmetric(vertical: 23)),
             Icon(FontAwesome.sort_number_up,size: 90,color: Color.fromARGB(255, 11, 77, 21),),
-            Text('Matematica',style: GoogleFonts.chakraPetch(
+            Text('Matemática',style: GoogleFonts.chakraPetch(
               color: Color.fromARGB(255, 7, 7, 7),
               fontSize: 26
             ),)
@@ -271,7 +297,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EconomiaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -296,7 +322,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => TecnologiaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -321,7 +347,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => PoliticaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -346,7 +372,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
            GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => PoesiaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -371,7 +397,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
            GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ContabilidadePage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -396,7 +422,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
            GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => PsicologiaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -412,7 +438,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Padding(padding: EdgeInsets.symmetric(vertical: 23)),
             Icon(FontAwesome5.brain,size: 90,color: Color.fromARGB(255, 11, 77, 21),),
-            Text('Pscícologia',style: GoogleFonts.chakraPetch(
+            Text('Psicologia',style: GoogleFonts.chakraPetch(
               color: Color.fromARGB(255, 7, 7, 7),
               fontSize: 26
             ),)
@@ -421,7 +447,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => FilosofiaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -446,7 +472,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => MarketingPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -471,7 +497,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => StartupsPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -496,7 +522,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => GestaoPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -521,7 +547,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AdministracaoPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -546,7 +572,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AutoConhecimentoPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -571,7 +597,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EstrangeiroPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -596,7 +622,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SociologiaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -621,7 +647,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => FiccaoPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -646,7 +672,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => DiversosPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
@@ -671,7 +697,7 @@ class _HomePageState extends State<HomePage> {
         ),
           ),
           GestureDetector(
-           // onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AnimesPage(),)),
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => AutoBiografiaPage(),)),
         child: Card(
           color: Colors.white,
           shape: RoundedRectangleBorder(
