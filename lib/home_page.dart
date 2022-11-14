@@ -87,11 +87,11 @@ class _HomePageState extends State<HomePage> {
          child: Column(
           children: [
             Padding(padding: EdgeInsets.symmetric(vertical: 23)),
-            Icon(BootstrapIcons.journal_bookmark,size: 90,color: Color.fromARGB(255, 11, 77, 21),),
+            Icon(FontAwesome5.book,size: 90,color: Color.fromARGB(255, 11, 77, 21),),
             Text('História',style: GoogleFonts.chakraPetch(
               color: Color.fromARGB(255, 7, 7, 7),
               fontSize: 26
-            ),)
+            ),),
           ],
          ),
         ),

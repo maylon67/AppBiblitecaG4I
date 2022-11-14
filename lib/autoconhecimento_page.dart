@@ -16,7 +16,7 @@ class _AutoConhecimentoPageState extends State<AutoConhecimentoPage> {
         centerTitle: true,
         backgroundColor: Color(0xFF047808),
         title: Text(
-          'Auto-Conhecimento',
+          'AutoConhecimento',
           style: GoogleFonts.trispace(
               fontSize: 29, color: Color.fromARGB(255, 255, 255, 255)),
         ),
