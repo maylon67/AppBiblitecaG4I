@@ -1,9 +1,10 @@
+import 'package:app_biblioteca_planilha/home_page.dart';
 import 'package:app_biblioteca_planilha/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-home: LoginPage(),
+home: HomePage(),
 debugShowCheckedModeBanner: false,  ));
 }
 
