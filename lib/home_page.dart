@@ -605,7 +605,7 @@ class _HomePageState extends State<HomePage> {
           side: BorderSide(
             color: Color.fromARGB(255, 10, 90, 22),
             width: 4.5
-          )
+          ),
         ),
         shadowColor: Color.fromARGB(255, 11, 74, 16),
         elevation: 17.6,

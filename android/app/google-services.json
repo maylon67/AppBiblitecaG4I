@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "561144790087",
+    "project_id": "bibliotecag4i",
+    "storage_bucket": "bibliotecag4i.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561144790087:android:cd94e8f95f0591b6cb4562",
+        "android_client_info": {
+          "package_name": "com.example.app_biblioteca_planilha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561144790087-aak5d6itjhk5s0arlp7ncllbffsstlh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app_biblioteca_planilha",
+            "certificate_hash": "b3a967d7a6e6ef2ed1e55ba6e5f5518f10fd9f30"
+          }
+        },
+        {
+          "client_id": "561144790087-pnkefg5s7qta5i8qklb0fgoeh6fhec7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDccX5EoiS6i_O90-cewvmao3xFZ2Z25zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561144790087-pnkefg5s7qta5i8qklb0fgoeh6fhec7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
