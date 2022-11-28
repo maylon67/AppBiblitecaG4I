@@ -38,6 +38,11 @@ dependencies:
   iconly: ^1.0.1
   bootstrap_icons: ^1.9.1
   fluttericon: ^2.0.0
+  cloud_firestore: ^4.1.0
+  image_picker: ^0.8.6
+  google_sign_in: ^5.4.2
+  firebase_storage: ^11.0.6
+  #firebase_auth: ^3.11.0
 
 dev_dependencies:
   flutter_test:
