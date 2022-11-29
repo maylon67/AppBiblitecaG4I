@@ -18,6 +18,7 @@ class _MatematicaPageState extends State<MatematicaPage> {
         title: Text(
           'Matemática',
           style: GoogleFonts.trispace(
+            letterSpacing: 0.5,
               fontSize: 29, color: Color.fromARGB(255, 255, 255, 255)),
         ),
         shape: RoundedRectangleBorder(

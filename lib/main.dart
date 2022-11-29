@@ -8,13 +8,7 @@ void main() {
   runApp(MaterialApp(
 home: HomePage(),
 debugShowCheckedModeBanner: false,  ));
-FirebaseFirestore.instance.collection('Livros').doc('Genero').collection('Tecnologia').doc('Descomplicando o Docker').
-set(
-{
-'bla bla':'ibjgbj'
-
-}
-);
+FirebaseFirestore.instance.collection('Livros').doc('Genero').collection('Tecnologia').doc('Descomplicando o Docker').set({});
 }
 
 class MyApp extends StatefulWidget {
