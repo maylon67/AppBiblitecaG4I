@@ -1,11 +1,20 @@
 import 'package:app_biblioteca_planilha/home_page.dart';
 import 'package:app_biblioteca_planilha/login_page.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
 home: HomePage(),
 debugShowCheckedModeBanner: false,  ));
+FirebaseFirestore.instance.collection('Livros').doc('Genero').collection('Tecnologia').doc('Descomplicando o Docker').
+set(
+{
+'bla bla':'ibjgbj'
+
+}
+);
 }
 
 class MyApp extends StatefulWidget {
