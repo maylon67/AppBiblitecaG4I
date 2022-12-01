@@ -11,7 +11,7 @@ class PoliticaPage extends StatefulWidget {
 class _PoliticaPageState extends State<PoliticaPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( 
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Color(0xFF047808),
