@@ -1,20 +1,22 @@
 import 'package:app_biblioteca_planilha/home_page.dart';
 import 'package:app_biblioteca_planilha/login_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  //await Firebase.initializeApp();
+  FirebaseFirestore.instance.collection('Livros').doc("Genero").set({
+    'Geografia': 'Mapa',
+  });
   runApp(MaterialApp(
-home: HomePage(),
-debugShowCheckedModeBanner: false,  ));
-FirebaseFirestore.instance.collection('Livros').doc('Genero').collection('Tecnologia').doc('Descomplicando o Docker').
-set(
-{
-'bla bla':'ibjgbj'
-
-}
-);
+    home: HomePage(),
+    debugShowCheckedModeBanner: false,
+  ));
+  
 }
 
 class MyApp extends StatefulWidget {

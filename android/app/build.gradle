@@ -47,6 +47,7 @@ android {
         applicationId "com.example.app_biblioteca_planilha"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
+        multiDexEnabled true
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
