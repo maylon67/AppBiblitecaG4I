@@ -9,14 +9,24 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   //await Firebase.initializeApp();
-  FirebaseFirestore.instance.collection('Livros').doc("Genero").set({
-    'Geografia': 'Mapa',
-  });
+  FirebaseFirestore.instance
+      .collection('Livros')
+      .doc("Genero")
+      .collection('Energia')
+      .doc('Projetos de sistemas fotovoltaicos')
+      .set({'autor': 'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Praticas de energia eólica').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Estrutura de tarifária de transmissão de energia létrica no brasil').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Setro elétrico brasileiro estado e mercado').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Energia eólica').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Energia eólica').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Energia solar fotovoltaica').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Prjetos de sistemas fotovoltaicos').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Projetos de sistemas fotovoltaicos').set({'autor':'desconhecido'});
   runApp(MaterialApp(
     home: HomePage(),
     debugShowCheckedModeBanner: false,
   ));
-  
 }
 
 class MyApp extends StatefulWidget {
