@@ -9,38 +9,17 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   //awsait Firebase.initializeApp();
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene Lupin e agulha oca').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene Lupin e a ilha dos trinta Caixões').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene Lupin e a rolha de cristal').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Agência Barnnet e associados as novas aventuras de arsene lupin').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene lupin e a condesa de clagiostro').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene lupin as confissões').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene lupin e o triangulo de ouro').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene lupin e o estilhaço de obus').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene lupin e a mansão misteriosa').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene lupin e os dentes de tigre').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene lupin e o ladrão de casaca').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene lupin contra herlock sholmes').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('A estratégia do dragão').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Under Ground rail road').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('House of cards').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Agatha Christie assasinato no expresso do oriente').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Poderoso chefão').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Ian enclasurado mc ewan').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('O chapéu do mago').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('O pequeno principe parte 1').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('O pequeno principe parte 2').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('O leopardo').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('O verão perigoso').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Paris é uma festa').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('O morro dos ventos uivantes').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Segunda fundação').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Fundação e império').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Fundação e império').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Uns e outros').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('O livro do desassossego').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Os três mosqueterios').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Ficção').doc('Arsene Lupin e as oito badaladas o relógio').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('Ética a nicômaco').set({'autor': 'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('Lyaluft a riqueza do mundo').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('Desejo sexual').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('A historia da filosofia').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('A historia da filosofia').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filsofia').doc('O blackberry de hamlet').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('A extinção do desejo').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('Kafka para sobrecarregados').set({'autor': 'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('O livro da filosofia').set({'autor':'desconhecido'});
+      
+      
   runApp(MaterialApp(
     home: HomePage(),
     debugShowCheckedModeBanner: false,
@@ -55,28 +34,17 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
+        
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
-
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
 
