@@ -8,21 +8,21 @@ import 'package:flutter/material.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  //await Firebase.initializeApp();
-  FirebaseFirestore.instance
-      .collection('Livros')
-      .doc("Genero")
-      .collection('Energia')
-      .doc('Projetos de sistemas fotovoltaicos')
-      .set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Praticas de energia eólica').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Estrutura de tarifária de transmissão de energia létrica no brasil').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Setro elétrico brasileiro estado e mercado').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Energia eólica').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Energia eólica').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Energia solar fotovoltaica').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Prjetos de sistemas fotovoltaicos').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Energia').doc('Projetos de sistemas fotovoltaicos').set({'autor':'desconhecido'});
+  //awsait Firebase.initializeApp();
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('Fusões e Aquisições').set({'autor': 'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('Fazendo a Inovação Acontecer').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('Business Model').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('Branding Para Empreendedores').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('Empreendedorismo Disciplinado').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('Inansáveis').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('Versão Beta').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('A Jornada do Empreendedor').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('Vai Lá e Faz').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('Empreendedorismo de A a Z').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Empreendedorismo').doc('Inovação e Espírito Empreendedor').set({'autor':'desconhecido'});
+     // FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Política').doc('Contra Aborto').set({'autor':'desconhecido'});
+     // FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Política').doc('A China Sacode o Mundo').set({'autor':'desconhecido'});
+     // FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Política').doc('Por Que o Brasil é um País Atrasado?').set({'autor':'desconhecido'});
   runApp(MaterialApp(
     home: HomePage(),
     debugShowCheckedModeBanner: false,
