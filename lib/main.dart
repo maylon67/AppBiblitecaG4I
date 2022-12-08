@@ -9,17 +9,28 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   //awsait Firebase.initializeApp();
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('Ética a nicômaco').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('Lyaluft a riqueza do mundo').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('Desejo sexual').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('A historia da filosofia').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('A historia da filosofia').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filsofia').doc('O blackberry de hamlet').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('A extinção do desejo').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('Kafka para sobrecarregados').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Filosofia').doc('O livro da filosofia').set({'autor':'desconhecido'});
-      
-      
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Crer ou não Crer').set({'autor': 'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Carta Encíclica').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('UMa luz no mundo').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Avareza').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Falsa aurora').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Ortodoxia').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Viver a palavra').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Planner itúrgico & devocional').set({'autor': 'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Hereges G.K chesterton').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Teologia do Corpo').set({'autor': 'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Sobre o islã').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Exortação Apostólica Pós sinodal').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Da ilusão á verdade').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('O homem eterno').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Jesus o maior Psicólogo que ja existiu').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('O amor vence').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Biblia Pastoral').set({'autor': 'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Jesus e o mundo do judaismo').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Pelos vales escuros').set({'autor': 'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Biblia de jerusalém').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Os custos sociais da pornografia').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Religião').doc('Ressureição').set({'autor':'desconhecido'});
   runApp(MaterialApp(
     home: HomePage(),
     debugShowCheckedModeBanner: false,
