@@ -14,7 +14,7 @@ class _PsicologiaPageState extends State<PsicologiaPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Color(0xFF047808),
+        backgroundColor: Color.fromARGB(255, 20, 26, 20),
         title: Text(
           'Psicologia',
           style: GoogleFonts.trispace(

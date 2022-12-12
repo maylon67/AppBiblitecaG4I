@@ -15,6 +15,7 @@ class _ReligiaoPageState extends State<ReligiaoPage> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Color(0xFF047808),
+        
         title: Text(
           'Religião',
           style: GoogleFonts.trispace(
