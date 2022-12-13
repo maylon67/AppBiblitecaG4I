@@ -28,7 +28,7 @@ Future<void> main() async {
       FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
       FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
       FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
+      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Tecnologia').doc('Aperte o f5').set({'Sinopse':'Aperte o F5 aborda tanto a transformação pessoal pela qual passou Satya Nadella atual CEO da Microsoft, que sucedeu Steve Ballmer e Bill Gates e teve que aprender a ser líder quanto todas as mudanças de valores e estratégia de uma das empresas mais conhecidas e renomadas do mundo.'});
       FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor': 'desconhecido'});
       FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
       FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Matematica Financeira').set({'autor':'desconhecido'});
