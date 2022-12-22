@@ -9,46 +9,18 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   //awsait Firebase.initializeApp();
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Tecnologia').doc('Aperte o f5').set({'Sinopse':'Aperte o F5 aborda tanto a transformação pessoal pela qual passou Satya Nadella atual CEO da Microsoft, que sucedeu Steve Ballmer e Bill Gates e teve que aprender a ser líder quanto todas as mudanças de valores e estratégia de uma das empresas mais conhecidas e renomadas do mundo.'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Matematica Financeira').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Fundamentos da Contabilidade').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Fechamento do Balanço').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Estastisticas para Processos Produtivos').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Cursos de Contabilidade Basica').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Contabilidade Societária').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Contabilidade Para os Negocios').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Contabilidade Gerencial').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Contabilidade Geral').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Contabilidade de Instituições Financeiras').set({'autor': 'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Contabilidade de Cursos').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Contabilidade Basica').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Atraves Logica').set({'autor':'desconhecido'});
-      FirebaseFirestore.instance.collection('Livros').doc("Genero").collection('Contabilidade').doc('Analise Didatica das Demonstrações Contabeis').set({'autor':'desconhecido'});
+
   runApp(MaterialApp(
     home: HomePage(),
     debugShowCheckedModeBanner: false,
   ));
+
+FirebaseFirestore.instance.collection('Livros').snapshots().listen((dado) { 
+  dado.docs.forEach((d) {
+print(d.data());
+   });
+});
+
 }
 
 class MyApp extends StatefulWidget {
