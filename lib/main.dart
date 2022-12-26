@@ -15,9 +15,9 @@ Future<void> main() async {
     debugShowCheckedModeBanner: false,
   ));
 
-FirebaseFirestore.instance.collection('Livros').snapshots().listen((dado) { 
-  dado.docs.forEach((d) {
-print(d.data());
+ FirebaseFirestore.instance.collection('Livros').snapshots().listen((dado) { 
+   dado.docs.forEach((d) {
+ print(d.data());
    });
 });
 
